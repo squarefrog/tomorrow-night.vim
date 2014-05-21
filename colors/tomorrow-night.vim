@@ -340,7 +340,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
-	call <SID>X("javascriptNull", s:orange, "", "")
+  call <SID>X("javascriptNull", s:orange, "", "")
 	call <SID>X("javascriptGlobal", s:blue, "", "")
 	call <SID>X("javascriptStatement", s:red, "", "")
 
@@ -351,7 +351,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("coffeeObject", s:yellow, "", "")
 
 	" HTML Highlighting
-	call <SID>X("htmlTag", s:red, "", "")
+	call <SID>X("htmlTag", s:red, "", "") "An extra comment
 	call <SID>X("htmlTagName", s:red, "", "")
 	call <SID>X("htmlArg", s:red, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
@@ -360,7 +360,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("diffAdd", s:background, s:green, "")
 	call <SID>X("diffDelete", s:background, s:red, "")
   call <SID>X("diffChange", s:background, "2B5B77", "")
-  call <SID>X("diffText", s:aqua, "2B5B77", "")
+  call <SID>X("diffText", s:red, "2B5B77", "")
 
 	" ShowMarks Highlighting
 	call <SID>X("ShowMarksHLl", s:orange, s:background, "none")
