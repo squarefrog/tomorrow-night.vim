@@ -362,6 +362,12 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("diffChange", "", "2B5B77", "")
 	call <SID>X("diffText", s:line, s:blue, "")
 
+	" Spelling
+	call <SID>X("SpellBad", s:background, s:red, "")
+	call <SID>X("SpellCap", s:background, s:green, "")
+	call <SID>X("SpellLocal", s:background, s:aqua, "")
+	call <SID>X("SpellRare", s:background, s:purple, "")
+
 	" ShowMarks Highlighting
 	call <SID>X("ShowMarksHLl", s:orange, s:background, "none")
 	call <SID>X("ShowMarksHLo", s:purple, s:background, "none")
